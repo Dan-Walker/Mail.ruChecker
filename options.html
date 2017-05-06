@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Mail.ru Checker - Options</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/options.css" />
+        <script type="text/javascript" src="js/element.js"></script>
+        <script type="text/javascript" src="js/options.js"></script>
+    </head>
+    <body>
+        <div class="logo"></div>
+        <div class="content">
+            <h1>Настройки</h1>
+            <div class="form__row form__row_msg-list">
+                <div class="form__row__label">
+                    <label for="sound_notif">Звуковое оповещение</label>
+                </div>
+                <div class="form__row__widget">
+                    <div class="form__select" style="width:200px;">
+                        <div class="form__select__box">
+                            <div class="form__select__box__text js-text" id="sound_notif_text"></div>
+                        </div>
+                        <i class="form__select__arrow"></i>
+                        <select id="sound_notif" name="sound_notif" class="form__select__select " style="width:200px;">
+                            <option value="0">Без звука</option>
+                            <option value="1.ogg">Мелодия 1</option>
+                            <option value="4.ogg">Мелодия 2</option>
+                            <option value="5.ogg">Мелодия 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__row form__row_msg-list">
+                <div class="form__row__label">
+                    <label for="time">Интервал проверки новых писем</label>
+                </div>
+                <div class="form__row__widget">
+                    <div class="form__select" style="width:200px;">
+                        <div class="form__select__box">
+                            <div class="form__select__box__text js-text" id="time_text"></div>
+                        </div>
+                        <i class="form__select__arrow"></i>
+                        <select id="time" name="time" class="form__select__select " style="width:200px;">
+                            <!-- <option value="10000">10 сек.</option>
+                            <option value="20000">20 сек.</option> -->
+                            <option value="30000">30 сек.</option>
+                            <option value="60000">60 сек.</option>
+                            <option value="180000">180 сек.</option>
+                            <option value="300000">300 сек.</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__row form__row_msg-list">
+                <div class="form__row__label">
+                    <label for="interface">Интерфейс почты</label>
+                </div>
+                <div class="form__row__widget">
+                    <div class="form__select" style="width:200px;">
+                        <div class="form__select__box">
+                            <div class="form__select__box__text js-text" id="interface_text"></div>
+                        </div>
+                        <i class="form__select__arrow"></i>
+                        <select id="interface" name="interface" class="form__select__select " style="width:200px;">
+                            <option value="win">Обычный</option>
+                            <option value="tel">Упрощенный (мобильный)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <div class="form__row form__row_msg-list">
+                <div class="form__row__label_full">
+                    <label for="MessagesPerPage">Проверять новые письма в папках</label>
+                </div>
+                <div id="folder"></div>
+            </div>
+            
+            <hr/>
+            
+            <div class="form__row">
+                <div class="form__row__label">
+                    <label>Клик на значок открывает</label>
+                </div>
+                <div class="form__row__widget form__row__widget_text">
+                    <div class="form__checkbox">
+                        <label for="modal_views0">
+                            <input type="radio" class="form__checkbox__checkbox" name="modal_views" id="modal_views0" value="0">
+                            Окно предварительного просмотра
+                        </label>
+                    </div>
+                    <div class="form__checkbox form__checkbox_next-bottom-checkbox">
+                        <label for="modal_views1">
+                            <input type="radio" class="form__checkbox__checkbox" name="modal_views" id="modal_views1" value="1">
+                            Почта Mail.ru
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <hr/>
+
+            <div class="form__row">
+                <div class="form__row__label">
+                    <label></label>
+                </div>
+                <div class="form__row form__row_snap-to-top">
+                    <div class="form__row__widget form__row_no-label">
+                        <div class="form__checkbox">
+                            <label for="view_notif">
+                                <input type="checkbox" class="form__checkbox__checkbox" name="view_notif" id="view_notif">
+                                <span class="form__checkbox__label">Показывать уведомления о новых письмах</span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form__row form__row_snap-to-top">
+                    <div class="form__row__widget form__row_no-label">
+                        <div class="form__checkbox">
+                            <label for="view_photo">
+                                <input type="checkbox" class="form__checkbox__checkbox" name="view_photo" id="view_photo">
+                                <span class="form__checkbox__label">Показывать аватары пользователей в списке писем</span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <div class="form__actions__wrapper" style="height: 26px;">
+                <div class="form__actions">
+                    <div class="form__actions__inner">
+                        <button id="save" class="form__button form__button_submit">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <audio id="sound" src="sound/4.ogg"></audio>
+        <div id="options_mess">Настройки сохранены</div>
+    </body>
+</html>
+
