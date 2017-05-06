@@ -1,0 +1,90 @@
+/* 
+    Document   : mail
+    Created on : 26.01.2012, 10:33:03
+    Author     : k.belyshev
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.title{
+    background: #EBEFF9;
+    border-top: 1px solid #B5C7DE;
+    margin-top:10px; 
+    margin-bottom:5px;
+    padding: 3px 0px 2px 10px;
+}
+.oprions{
+    padding-top:30px;
+    padding-left:110px;
+}
+.play{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+#options_mess{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    margin-left: -100px;
+    padding: 5px 10px;
+    background-color: #DAE4EF;
+    opacity: 1;
+    font-size: 16px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.box label{
+    margin-left: 10px;
+}
+
+.tab {
+    width: 50%;
+    margin: 10px;
+}
+#tabs { 
+    list-style: none; 
+    padding-left: 0px; 
+    margin-bottom: 0px;
+}
+#tabs li { 
+    display: inline; 
+    color: black; 
+    float: left; 
+    padding: 4px 10px; 
+    margin-left: -1px; 
+    position: relative; 
+    left: 1px; 
+    background: #fff; 
+    text-decoration: none;
+}
+#tabs li:hover { background: #ccc; }
+
+#tabs li:first-child {
+    background-color: #ff0000;
+}
+
+#tabscontent { 
+    margin-top: -1px;
+    min-height: 100px;
+    width: auto;
+}
+#tabscontent div { 
+    background: white; 
+    padding: 10px; 
+    width: 100%; 
+    display: none;
+}
+#tabscontent div:first-child {
+    display: block;
+}
+
+#tabscontent div, #tabs li{ border: 1px solid #ccc; }
+
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }

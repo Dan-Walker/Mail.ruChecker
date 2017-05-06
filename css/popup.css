@@ -1,0 +1,216 @@
+html{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 500px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+.header{
+    height: 41px;
+    background-image: url('../img/bg_header.png');
+    background-repeat: repeat-x;
+}
+.header a.gomail {
+    float: left;
+    margin-left: 12px;
+    margin-top: 10px;
+    display: block;
+    width: 98px;
+    height: 20px;
+    background: url(../img/logo.png) no-repeat;
+    outline: none;
+}
+.header a.settings, .header .wrapper_update{
+    float: right;
+    display: block;
+    outline: none;
+    margin-top: 14px;
+}
+
+.header a.update {
+    display: block;
+    width: 15px;
+    height: 13px;
+    background: url(../img/update.png) no-repeat;
+}
+.header a.settings {
+    width: 14px;
+    height: 12px;
+    background: url(../img/settings.png) no-repeat;
+    margin-left: 20px;
+    padding-right: 22px;
+}
+
+
+#content{
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+.account{
+    background-color: #eef3f7; 
+    list-style: none;
+    padding: 5px 11px;
+    margin: 0;
+    margin-bottom: 1px;
+    cursor: default;
+}
+.account li{
+    display: inline-block;
+    vertical-align:top;
+    text-align: center;
+}
+.account .createmess {    
+    width: 26px;
+    height: 14px;
+    margin-right: 8px;
+    padding-top: 2px;
+    background: url(../img/ico_new_mess.png) no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+.account .account_name {
+    color: #0857a6;
+    cursor: pointer;
+}
+.account .all_mess {
+    float: right;
+    font-size: 13px;
+    color: #0857a6;
+    cursor: pointer;
+}
+.mes {
+    padding: 10px 11px;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+#content div .mes:last-child{
+    border: none;
+}
+#content .messages {
+    overflow: hidden;
+    max-height: 153px;
+}
+.mes #action{
+    float: left;
+    display: inline;
+    width: 27px;
+    height: 26px;
+    margin-top: 3px;
+}
+.mes_status_icon{
+    display: inline;
+    /*width: 13px;
+    height: 14px;*/
+}
+.mes_status_icon i{
+    display: block;
+    width: 13px;
+    height: 14px;
+    margin-left: 9px;
+    margin-top: 8px;
+    background-image: url('../img/status_icon.png');
+    background-position:-0px -0px;
+    background-repeat:no-repeat;
+}
+.mes_flag_icon{
+    display: inline;
+}
+.mes_flag_icon i{
+    display: block;
+    width: 13px;
+    height: 14px;
+    background-image: url('../img/flag_icon.png');
+    background-position:-0px -0px;
+    background-repeat:no-repeat;
+}
+.mes .messageline__body__avatar__pic {
+    float: left;
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin: 3px 11px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.mes #from a {
+    font-weight: bolder;
+    color: #0857a6;
+}
+.mes #from, .mes #subject{
+    position: relative;
+    height: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.mes #subject a{
+    color: #333333;
+    float: left;
+}
+
+.mes #from a, .mes #subject a {
+    font-size: 13px;
+    text-decoration: none;
+}
+.mes:hover #from a, .mes:hover #subject a {
+    color: #F26D00;
+}
+
+.mes .subject_fade{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(#fff), color-stop(0.5, #fff));
+}
+.mes .sub_info{
+    position: absolute;
+    right: 0px;
+    display: inline;
+    padding-left: 15px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(#fff), color-stop(0.3, #fff));
+}
+.mes .sub_info #attachment{
+    vertical-align: top;
+}
+.mes #date{
+    font-size: 13px;
+    text-align: right;
+    color: #656972;
+}
+#not_auth{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #0857a6;
+}
+#not_auth a{
+    cursor: pointer;
+}
+#not_auth {
+    cursor: pointer;   
+}
+.go_email {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 11px;
+    color: #0857a6;
+}
+.go_email:hover {
+    text-decoration: underline;
+}
